@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>mohammed</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">MY Skills</a>
+        </nav>
+        <div class="list-btn">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="side-menu">
+                <a class="list-title"  href="index.html">Home</a>
+                <a class="list-title"  href="about.html">About Me</a>
+                <a class="list-title"  href="skills">Skills</a>
+                <a class="list-title"  href="projects.html">All Projects</a>
+                <a class="list-title"  href="scripts.html">Fun scripts</a>
+                <a class="list-title"  href="cv.html">CV</a>
+            </nav>
+        </div>
+        </header>
+
+    <section>
+        <div class="skills-list">
+            <div class="category-title"><div class="project-card">Programming & OOP</div></div>
+            <div class="project-card skill-card" data-desc="My primary language. I use Python for automation, AI integrations, bots, data processing, and building full applications."><span class="skill-item">Python</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="I design programs using Object-Oriented principles — structuring code with classes, inheritance, and encapsulation for clean, reusable logic."><span class="skill-item">OOP</span><div class="skill-desc"></div></div>
+                        
+            <div class="category-title"><div class="project-card">AI & Data</div></div>
+            <div class="project-card skill-card" data-desc="I build AI-powered applications using Google's Gemini models via API — including chat, summarization, and multimodal tasks."><span class="skill-item">Google Gemini</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="I craft effective prompts to get the best results from AI models — controlling tone, format, reasoning style, and output quality."><span class="skill-item">Prompt Eng</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="Retrieval-Augmented Generation — I build systems that let AI answer questions using your own documents and data, not just its training knowledge."><span class="skill-item">RAG</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="I store and search high-dimensional embeddings to enable semantic search and AI memory — the backbone of RAG and smart search systems."><span class="skill-item">Vector Database</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="ChromaDB is my go-to local vector store. I use it to build fast, offline-friendly AI memory and semantic search pipelines."><span class="skill-item">ChromaDB</span><div class="skill-desc"></div></div>
+                        
+            <div class="category-title"><div class="project-card">Development</div></div>
+            <div class="project-card skill-card" data-desc="I build and style web pages from scratch — like this portfolio you're looking at right now."><span class="skill-item">HTML & CSS</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="I connect applications to external services and data sources using REST APIs — sending requests, handling responses, and parsing JSON."><span class="skill-item">REST API Integration</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="I extract data from websites automatically using Python — collecting information that isn't available through an official API."><span class="skill-item">Web Scraping</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="I build cross-platform desktop applications with graphical interfaces using Python, giving users a real app experience."><span class="skill-item">Desktop App Dev</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="I build feature-rich Telegram bots that automate tasks, answer questions, manage data, and interact with users in real time."><span class="skill-item">Telegram Bot Dev</span><div class="skill-desc"></div></div>
+                        
+            <div class="category-title"><div class="project-card">Backend & DB</div></div>
+            <div class="project-card skill-card" data-desc="I use SQLite as a lightweight, file-based database for local apps and bots — fast, simple, and no server required."><span class="skill-item">SQLite</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="I use Supabase as a cloud backend — storing data, managing users, and running queries through its powerful Postgres-based platform."><span class="skill-item">Supabase</span><div class="skill-desc"></div></div>
+                        
+            <div class="category-title"><div class="project-card">Engineering</div></div>
+            <div class="project-card skill-card" data-desc="My academic background — I studied how light transmits data through fiber optic networks, covering signal design, loss analysis, and communication systems."><span class="skill-item">Optical Communication Engineering</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="I automate repetitive tasks and workflows using Python scripts, reducing manual effort and improving efficiency."><span class="skill-item">Automation</span><div class="skill-desc"></div></div>
+            <div class="project-card skill-card" data-desc="I use AutoCAD for technical drawing and design — creating precise 2D plans for engineering and layout purposes."><span class="skill-item">AutoCAD</span><div class="skill-desc"></div></div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const desc = card.querySelector('.skill-desc');
+                const isOpen = card.classList.contains('open');
+
+                // Close all others
+                document.querySelectorAll('.skill-card.open').forEach(c => c.classList.remove('open'));
+
+                if (!isOpen) {
+                    desc.textContent = card.dataset.desc;
+                    card.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
