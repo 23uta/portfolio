@@ -382,6 +382,11 @@ section {
         flex-direction: column;
         align-content: center;
     }
+    .scripts-content{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
 }
 
 @media (max-width:641px){
