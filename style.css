@@ -365,14 +365,10 @@ section {
     }
     .navigation{
         display: flex;
-        flex-direction: column;
         padding-right: 15px;
     }
     .logo{
         padding-left: 80px;
-    }
-    .hamburger{
-        padding-top: 15px;
     }
     .side-menu{
         padding-left: 15px;
