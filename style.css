@@ -361,11 +361,22 @@ section {
 
 @media (max-width:1023px){
     header{
-        padding: 12px 20px
+        padding: 1px 1px
     }
     .navigation{
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 15px;
     }
+    .logo{
+        padding-left: 80px;
+    }
+    .hamburger{
+        padding-top: 15px;
+    }
+    .side-menu{
+        padding-left: 15px;
+    }project
     .title{
         padding: 1.8em
     }
@@ -387,6 +398,10 @@ section {
         flex-direction: column;
         align-content: center;
     }
+    .skills-list{
+        padding-left: 15px;
+    }
+    
 }
 
 @media (max-width:641px){
