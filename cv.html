@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CV – Mohammed Ahmed</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">My CV</a>
+        <div class="list-btn">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="side-menu">
+                <a class="list-title" href="index.html">Home</a>
+                <a class="list-title" href="about.html">About Me</a>
+                <a class="list-title" href="skills.html">Skills</a>
+                <a class="list-title" href="projects.html">All Projects</a>
+                <a class="list-title" href="scripts.html">Fun Scripts</a>
+                <a class="list-title" href="cv.html">CV</a>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+
+        <div class="cv-wrapper">
+
+            <!-- ══ LEFT SIDEBAR ══════════════════════════════════ -->
+            <div class="cv-sidebar">
+
+                <!-- Name + motto -->
+                <div class="cv-glass">
+                    <div class="cv-name">Mohammed Ahmed Abd-Ali</div>
+                    <div class="cv-title-label">Full Stack Python Developer</div>
+                    <p class="cv-motto">
+                        ❝ I don't just write code,<br>I bring your thoughts into life ❞
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div class="cv-glass">
+                    <div class="icon"><i class="fa-solid fa-address-card"></i></div>
+                    <div class="info">
+                        <h3>Contact</h3>
+                        <p><i class="fa-solid fa-phone"></i>&nbsp; +964 780 595 4580</p>
+                        <p><i class="fa-solid fa-envelope"></i>&nbsp; mohammed2352004@gmail.com</p>
+                        <p><i class="fa-solid fa-location-dot"></i>&nbsp; Baghdad, Iraq</p>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="cv-glass">
+                    <div class="icon"><i class="fa-solid fa-link"></i></div>
+                    <div class="info">
+                        <h3>Links</h3>
+                        <a href="https://23uta.github.io/portfolio/" target="_blank">
+                            <i class="fa-solid fa-globe"></i>&nbsp; 23uta.github.io/portfolio
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohammed-ahmed-a7061841a" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>&nbsp; LinkedIn
+                        </a>
+                        <a href="https://github.com/23uta" target="_blank">
+                            <i class="fa-brands fa-github"></i>&nbsp; github.com/23uta
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="cv-glass">
+                    <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="info">
+                        <h3>Education</h3>
+                        <p style="font-weight:700; color:#ffffff;">University of Technology</p>
+                        <p>B.Sc. Communication Engineering</p>
+                        <p>Optical Communication Systems</p>
+                        <p>Baghdad · 2023 – 2027</p>
+                        <p style="color:#00d2ff; font-weight:600;">4th Year Student</p>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="cv-glass">
+                    <div class="icon"><i class="fa-solid fa-language"></i></div>
+                    <div class="info">
+                        <h3>Languages</h3>
+                        <p>🇮🇶 Arabic — Native</p>
+                        <p>🇬🇧 English — B2 / C1</p>
+                        <p>🇩🇪 German — Learning</p>
+                    </div>
+                </div>
+
+                <!-- Hobbies -->
+                <div class="cv-glass">
+                    <div class="icon"><i class="fa-solid fa-star"></i></div>
+                    <div class="info">
+                        <h3>Hobbies</h3>
+                        <p>🥊 Boxing</p>
+                        <p>📚 Reading</p>
+                        <p>🔧 Hands-on / DIY</p>
+                        <p>💻 Self-improvement & Dev</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ══ END SIDEBAR ══════════════════════════════════ -->
+
+
+            <!-- ══ MAIN CONTENT ═════════════════════════════════ -->
+            <div class="cv-main">
+
+                <!-- Profile -->
+                <div class="cv-glass cv-profile">
+                    <div class="cv-section-title">Profile</div>
+                    <p>
+                        4th-year Communication Engineering student at the University of Technology, Baghdad,
+                        with a strong self-taught background in Python development, AI integration, and
+                        full-stack application building. I specialize in intelligent desktop apps, Telegram bots,
+                        RAG systems, and backend services — combining engineering foundations with modern AI
+                        tooling to ship real, working software.
+                    </p>
+                </div>
+
+                <!-- Projects -->
+                <div class="cv-glass">
+                    <div class="cv-section-title">Projects</div>
+
+                    <!-- Sumer AI -->
+                    <div class="cv-project-header">
+                        <strong>Sumer AI</strong>
+                        <span>2024 – Present</span>
+                    </div>
+                    <div class="cv-project-role">AI Desktop Assistant</div>
+                    <ul class="cv-bullets">
+                        <li>Open-source Arabic-first AI desktop chat app powered by Google Gemini 2.5 Flash.</li>
+                        <li>Built a full RAG system — users upload PDFs/DOCX/PPTX and chat with their documents using ChromaDB + Gemini Embeddings; answers include source & page number.</li>
+                        <li>Features: LaTeX math rendering, SQLite chat history, Word/Excel generation, DOCX→PDF, adaptive AI personality, RTL Arabic support.</li>
+                        <li>Includes a complete HWID-based license & activation system built on Supabase.</li>
+                        <li>Tech: Python · CustomTkinter · Gemini API · ChromaDB · Supabase · SQLite · python-docx</li>
+                    </ul>
+
+                    <hr class="cv-divider">
+
+                    <!-- Portfolio -->
+                    <div class="cv-project-header">
+                        <strong>Personal Portfolio Website</strong>
+                        <span>2024</span>
+                    </div>
+                    <div class="cv-project-role">Frontend — Full Project</div>
+                    <ul class="cv-bullets">
+                        <li>Designed and built this portfolio from scratch using HTML & CSS.</li>
+                        <li>Hosted on GitHub Pages — showcases projects, skills, and contact info.</li>
+                    </ul>
+
+                    <hr class="cv-divider">
+
+                    <!-- SSS -->
+                    <div class="cv-project-header">
+                        <strong>Sumer Schools System (SSS)</strong>
+                        <span>2025 – Present</span>
+                    </div>
+                    <div class="cv-project-role">SaaS — In Progress</div>
+                    <ul class="cv-bullets">
+                        <li>Building a SaaS platform for Iraqi schools — student management, scheduling, and reporting.</li>
+                        <li>Full-stack Python backend with Supabase cloud database; web frontend in progress.</li>
+                    </ul>
+
+                    <hr class="cv-divider">
+
+                    <!-- Bots -->
+                    <div class="cv-project-header">
+                        <strong>Telegram Bots & Automation Tools</strong>
+                        <span>2023 – Present</span>
+                    </div>
+                    <div class="cv-project-role">Python / Various</div>
+                    <ul class="cv-bullets">
+                        <li>Multiple feature-rich Telegram bots: task automation, AI Q&amp;A, data management, real-time interaction.</li>
+                        <li>Python automation scripts and web scraping tools published on GitHub.</li>
+                    </ul>
+
+                    <hr class="cv-divider">
+
+                    <!-- Freelance -->
+                    <div class="cv-project-header">
+                        <strong>Client Website</strong>
+                        <span>2025</span>
+                    </div>
+                    <div class="cv-project-role">Freelance Web Project</div>
+                    <ul class="cv-bullets">
+                        <li>Developed a website for a client — design, development, and deployment handled independently.</li>
+                    </ul>
+                </div>
+
+                <!-- Skills -->
+                <div class="cv-glass">
+                    <div class="cv-section-title">Skills</div>
+                    <div class="cv-skills-grid">
+                        <div class="cv-skill-row">
+                            <strong>Languages:</strong>
+                            <span class="tag">Python</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript (basic)</span>
+                        </div>
+                        <div class="cv-skill-row">
+                            <strong>AI & ML:</strong>
+                            <span class="tag">Google Gemini API</span><span class="tag">Prompt Engineering</span><span class="tag">RAG</span><span class="tag">ChromaDB</span><span class="tag">Vector Databases</span>
+                        </div>
+                        <div class="cv-skill-row">
+                            <strong>Backend & DB:</strong>
+                            <span class="tag">REST API</span><span class="tag">SQLite</span><span class="tag">Supabase</span><span class="tag">Web Scraping</span>
+                        </div>
+                        <div class="cv-skill-row">
+                            <strong>Development:</strong>
+                            <span class="tag">Desktop Apps</span><span class="tag">Telegram Bots</span><span class="tag">Git & GitHub</span>
+                        </div>
+                        <div class="cv-skill-row">
+                            <strong>Engineering:</strong>
+                            <span class="tag">Optical Communications</span><span class="tag">Arduino</span><span class="tag">Classic Control</span><span class="tag">Circuit Analysis</span>
+                        </div>
+                        <div class="cv-skill-row">
+                            <strong>Concepts:</strong>
+                            <span class="tag">OOP</span><span class="tag">Clean Code</span><span class="tag">Automation</span><span class="tag">Semantic Search</span>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Download button -->
+                <div class="cv-download-bar">
+                    <a href="Mohammed_Ahmed_CV.pdf" download class="projects-btn">
+                        <i class="fa-solid fa-download"></i>&nbsp; Download CV
+                    </a>
+                </div>
+
+            </div>
+            <!-- ══ END MAIN ══════════════════════════════════════ -->
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">copywrites @<span> mohammed ahmed</span></p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mohammed-ahmed-a7061841a"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/23_uta?igsh=MWFkaTZzbHU0eG9zMw=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/23uta"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
